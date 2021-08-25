@@ -74,78 +74,129 @@ export default function Home() {
             </View>
             <View style={[{flex: 1, backgroundColor: '#F2F8FD'}]}>
                 <View style={{
-                    position: 'absolute',
-                    top: -140,
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    width: '100%',
-                    padding: 20
+                    padding: 20,
+                    flex: 1
                 }}>
                     <View style={{
-                        height: 210,
-                        width: 165,
-                        backgroundColor: '#FFFFFF',
-                        borderRadius: 10,
+                        flex: 1
                     }}>
                         <View style={{
-                            padding: 20                            
+                            position: 'absolute',
+                            top: -140,
+                            width: '100%',
+                            flex: 1,
                         }}>
                             <View style={{
-                                backgroundColor: '#C6E3F4',
-                                height: 110,
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                borderRadius: 10
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
                             }}>
-                                <FontAwesome5 name={'brush'} color={'#2B8CD1'} size={60}/>
+                                <View style={{
+                                    height: 210,
+                                    width: 165,
+                                    backgroundColor: '#FFFFFF',
+                                    borderRadius: 10,
+                                }}>
+                                    <View style={{
+                                        padding: 20                            
+                                    }}>
+                                        <View style={{
+                                            backgroundColor: '#C6E3F4',
+                                            height: 110,
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                            borderRadius: 10
+                                        }}>
+                                            <FontAwesome5 name={'brush'} color={'#2B8CD1'} size={60}/>
+                                        </View>
+                                        <View>
+                                            <Text style={{
+                                                fontSize: 18,
+                                                fontWeight: '600',
+                                                marginTop: 15
+                                            }}>Design</Text>
+                                            <Text style={{
+                                                fontSize: 16,
+                                                fontWeight: '500',
+                                                marginTop: 5
+                                            }}>01.00 - 03.00 PM</Text>
+                                        </View>
+                                    </View>
+                                </View>
+                                <View style={{
+                                    height: 210,
+                                    width: 165,
+                                    backgroundColor: '#FFFFFF',
+                                    borderRadius: 10,
+                                }}>
+                                    <View style={{
+                                        padding: 20                            
+                                    }}>
+                                        <View style={{
+                                            backgroundColor: '#C6E3F4',
+                                            height: 110,
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                            borderRadius: 10
+                                        }}>
+                                            <MaterialIcons name={'sms'} color={'#2B8CD1'} size={60}/>
+                                        </View>
+                                        <View>
+                                            <Text style={{
+                                                fontSize: 18,
+                                                fontWeight: '600',
+                                                marginTop: 15
+                                            }}>Language</Text>
+                                            <Text style={{
+                                                fontSize: 16,
+                                                fontWeight: '500',
+                                                marginTop: 5
+                                            }}>03.00 - 05.00 PM</Text>
+                                        </View>
+                                    </View>
+                                </View>
                             </View>
-                            <View>
-                                <Text style={{
-                                    fontSize: 18,
-                                    fontWeight: '600',
-                                    marginTop: 15
-                                }}>Design</Text>
-                                <Text style={{
-                                    fontSize: 16,
-                                    fontWeight: '500',
-                                    marginTop: 5
-                                }}>01.00 - 03.00 PM</Text>
-                            </View>
-                        </View>
-                    </View>
-                    <View style={{
-                        height: 210,
-                        width: 165,
-                        backgroundColor: '#FFFFFF',
-                        borderRadius: 10,
-                    }}>
-                        <View style={{
-                            padding: 20                            
-                        }}>
                             <View style={{
-                                backgroundColor: '#C6E3F4',
-                                height: 110,
-                                justifyContent: 'center',
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
                                 alignItems: 'center',
-                                borderRadius: 10
+                                marginTop: 10
                             }}>
-                                <MaterialIcons name={'sms'} color={'#2B8CD1'} size={60}/>
+                                <Text style={{
+                                    fontWeight: 'bold',
+                                    fontSize: 27,
+                                    color: '#3E627F'
+                                }}>Recent classes</Text>
+                                <AntDesign name={'arrowright'} color={'#3E627F'} size={30}/>
                             </View>
-                            <View>
-                                <Text style={{
-                                    fontSize: 18,
-                                    fontWeight: '600',
-                                    marginTop: 15
-                                }}>Language</Text>
-                                <Text style={{
-                                    fontSize: 16,
-                                    fontWeight: '500',
-                                    marginTop: 5
-                                }}>03.00 - 05.00 PM</Text>
+                            <View style={{flex: 1, backgroundColor:'red'}}>
+                                <Text>To be updated</Text>
                             </View>
                         </View>
+                    </View>                    
+                    <View style={{ height: 70, width: "100%", backgroundColor: "white", borderTopColor: "#eee", borderTopWidth: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-evenly" }}>
+                        <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                        <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                        <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                        <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                        <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
                     </View>
                 </View>
+                {/* <View style={{
+                    width: '100%',
+                    padding: 20,
+                    flex: 1,
+                }}>
+                       
+                    
+                </View>
+
+                <View style={{ alignSelf: 'flex-end', height: 60, width: "100%", backgroundColor: "white", borderTopColor: "#eee", borderTopWidth: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-evenly" }}>
+                    <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                    <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                    <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                    <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                    <View style={{ width: 30, height: 30, borderColor: "red", borderWidth: 2 }}></View>
+                </View> */}
             </View>
         </View>
     )
